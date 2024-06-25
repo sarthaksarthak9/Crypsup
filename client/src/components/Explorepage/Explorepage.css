@@ -1,0 +1,85 @@
+  .supporterdashboard {
+      background-color: #151313;
+  }
+
+  .exploreheading {
+      color: white;
+      text-align: center;
+      font-size: 3rem;
+  }
+
+  .userproject {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin-top: 0;
+      padding-top: 3%;
+  }
+
+  .projectlink{
+    margin:1% 1%;
+  }
+
+  .projectbox {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 350px;
+      height: 300px;
+      transition: all 0.5s ease-in-out;
+  }
+
+  .projectbox:hover {
+      transform: scale(1.07);
+  }
+
+  .projecttitle {
+      font-size: 1.7rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 2%;
+  }
+
+  .projectbody {
+      font-size: 1.2rem;
+      color: #151313;
+  }
+
+  .projectlink {
+      text-decoration: none;
+      color: inherit;
+  }
+
+  .exploreheader {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5%;
+      padding-top: 1%;
+  }
+
+  .logo {
+      display: flex;
+      align-items: center;
+  }
+
+  .exploreheader .logo img {
+      width: 80px;
+  }
+
+  .goback{
+    font-size: 1.2rem;
+    background-color: #007bff;
+    border-radius: 10%;
+    padding:10px;
+    transition:all 0.4s ease-in-out;
+  }
+
+  .goback a{
+    text-decoration: none;
+    color:white;
+  }
+.goback:hover{
+    transform: scale(1.1);
+}

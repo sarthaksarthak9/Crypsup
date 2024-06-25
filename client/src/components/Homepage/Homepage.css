@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif; /* Changed font family to Arial */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f4f56e, #72e8e1, #58b3d3, #ffcc00, #007bff); /* Updated gradient without white */
+  background-size: 600% 600%; /* Larger background size for smoother animation */
+  animation: gradientAnimation 10s ease infinite; /* Faster animation for gradient background */
+  position: relative; /* Relative positioning */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.center-content {
+  text-align: center;
+  z-index: 1; /* Ensure content is above the background image */
+  color: #ffffff; /* White color for text */
+}
+
+.project-name {
+  margin-top: 20px;
+  font-size: 48px; /* Increased font size */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Adding text shadow */
+  animation: subtleMove 2s ease infinite alternate; /* Subtle moving animation */
+}
+
+@keyframes subtleMove {
+  0% {
+    transform: translateY(-1px); /* Move up */
+  }
+  100% {
+    transform: translateY(1px); /* Move down */
+  }
+}
+.icon {
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Adjust size as needed */
+  background-image: url('/assets/crypsup.png'); /* Add the path to your icon image */
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: multiply; /* Apply mix blend mode */
+}
+
+
+
+.description {
+  margin-top: 10px;
+  font-size: 24px; /* Increased font size */
+  font-weight: bold; /* Bold font weight */
+}
+
+.buttons {
+  margin-top: 40px; /* Increased margin */
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 30px; /* Increased padding */
+  margin: 0 10px;
+  background: linear-gradient(to right, #007bff, #58b3d3); /* Gradient background */
+  color: #ffffff; /* White text for contrast */
+  text-decoration: none;
+  border-radius: 50px; /* Increased border radius for a pill shape */
+  font-size: 20px; /* Increased font size */
+  transition: all 0.3s ease;
+  border: none; /* Remove border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Added box shadow */
+  cursor: pointer; /* Cursor effect */
+}
+
+.button:hover {
+  transform: translateY(-2px); /* Move up on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1); /* Adjusted box shadow on hover */
+}
+
+.button:active {
+  transform: translateY(1px); /* Move down on click */
+  box-shadow: none; /* Remove box shadow on click */
+}
+
+
+
+.ethereum-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; /* Adjusted position to the right side */
+  z-index: 0; /* Behind content */
+  opacity: 0.9; /* Adjusted opacity for faded effect */
+  background-image: url('https://imgs.search.brave.com/ETz9-eC1nYWswnLTWHGUy2unfPtgYz5Jb0HdO7socf4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nYWxsLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMTAvRXRo/ZXJldW0tTG9nby1Q/TkctSW1hZ2VzLnBu/Zw');
+  background-size: 200px auto; /* Adjusted size (width: 200px, height: auto) */
+  background-position: center;
+  filter: blur(5px); /* Added blur effect */
+}
+
